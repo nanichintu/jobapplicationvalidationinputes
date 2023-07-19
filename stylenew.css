@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  background-color: antiquewhite;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.main {
+  width: 700px;
+  height: 20%;
+  background-color: rgba(248, 247, 245, 0.734);
+  box-shadow: rgba(148, 136, 136, 0.355) 0px 8px 24px;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  text-align: center;
+  margin: 1% auto;
+  border-radius: 25px;
+}
+form {
+    position: relative;
+    z-index: 20;
+  overflow: scroll;
+  cursor: pointer;
+}
+h2 {
+  font-size: 35px;
+  margin: 1% auto;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+h4 {
+  display: block;
+  float: left;
+  margin-top: 25px;
+  text-shadow: 1px black;
+  font-weight: 500px;
+  color: darkcyan;
+  cursor: pointer;
+}
+p {
+  float: left;
+  z-index: 2;
+  text-indent: 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+h5 {
+  font-size: 25px;
+  margin: 1% auto;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: seagreen;
+  cursor: pointer;
+}
+.box {
+  width: 700px;
+  height: 20vh;
+  background-color: rgb(254, 254, 254);
+  box-shadow: rgba(133, 133, 133, 0.355) 0px 8px 24px;
+  align-items: center;
+  justify-content: center;
+  margin: 1% auto;
+  border-radius: 25px;
+  cursor: pointer;
+}
+label {
+  padding: 40px;
+  line-height: 80px;
+  font-size: 25px;
+  cursor: pointer;
+}
+input {
+  width: 40%;
+  font-size: 20px;
+  outline: 0;
+  border: 0;
+  margin-left: 41px;
+  border-bottom: 1px solid rgb(65, 65, 65);
+  cursor: pointer;
+}
+input[type="file"] {
+  border: none;
+}
+input[type="checkbox"] {
+  display: block;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+select{
+    width:50%;
+    padding: 10px;
+    border: none;
+    margin-left: 50px;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+option{
+    padding: 10px;
+
+}
+.box1 {
+  background-color: white;
+  width: 700px;
+  margin: 1% auto;
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+button {
+  text-align: center;
+  margin-left: 30%;
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  font-size: 25px;
+  outline: 0;
+  border: 0;
+  background-color: seagreen;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 25px;
+}
+#reset {
+  margin-top: -65px;
+  z-index: 20;
+  margin-right: 32%;
+  float: right;
+}
+span {
+  color: red;
+}
+i {
+  color: seagreen;
+}

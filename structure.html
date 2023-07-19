@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/7dac5318b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./stylenew.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="post" id="form">
+        <div class="main">
+          <h2>JR.WEB DEVELOPMENT</h2>
+          <h4>(Interview level-1)</h4>
+          <p>
+            We are hiring jr.web-development those who had done internship they
+            can apply for this job and should be work flexible, responsible.
+          </p>
+          <h5>
+            unknown1234@gmail.com &nbsp;&nbsp;<a href="#">Switch Account</a>
+          </h5>
+        </div>
+
+        <div class="box">
+          <label for="contactname">Enter Name</label><br />
+          <input
+            type="text"
+            placeholder="nanikanna"
+            id="contactname"
+            onkeyup="validateName()"
+          />
+          <span id="name-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="user-Email">Enter E-mail</label><br />
+          <input
+            type="email"
+            id="user-Email"
+            placeholder="abch1234@gmail.com"
+            onkeyup="validationEmail()"
+          />
+          <span id="email-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="phone-number">Enter phone-number</label><br />
+          <input
+            type="tel"
+            placeholder="012-345-6789"
+            id="phone-number"
+            onkeyup="validatephone()"
+          />
+          <span id="phone-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="Qualification">Enter Qualification</label><br />
+          <input
+            type="text"
+            placeholder="b.tech (or) m.tech"
+            id="Qualification"
+            required
+          />
+          <span id="qualification-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="branch">Enter Stream</label><br />
+          <input
+            type="text"
+            placeholder="civil/cse/ece/eee/mech..."
+            id="branch"
+            required
+          />
+          <span id="stream-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="passout-year">Enter Passout year</label><br />
+          <input type="tel" placeholder="2020-22" id="passout-year" required />
+          <span id="passout-Error"></span>
+        </div>
+
+        <!-- Are you fresher/Experience -->
+        <div class="box">
+          <label for="fresher">Are you fresher/Experience?</label><br />
+          <input type="text" placeholder="fresher/Experience" id="fresher" />
+          <span id="fresher-Error"></span>
+        </div>
+
+        <!-- Have you done internship? -->
+        <div class="box">
+          <label for="internship">Have you done internship?</label><br />
+          <select>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="box">
+          <label for="projects">Upload profile pic</label><br />
+          <input type="file" onchange="validation(event)" />
+        </div>
+
+        <div class="box">
+          <label for="projects">Upload Resume</label><br />
+          <input
+            type="file"
+            class="form-control"
+            onchange="validationresumetype(event)"
+          />
+        </div>
+
+        <div class="box">
+          <label for="why-hire">Why should we hire you?</label><br />
+          <input type="text" id="why-hire" onkeyup="validationmessage()" />
+          <span id="message-Error"></span>
+        </div>
+
+        <div class="box">
+          <label for="resume">Upload Projects</label><br />
+          <input
+            type="file"
+            id="resume"
+            multiple
+            onchange="validationprojects(event)"
+          />
+          <span id="resume-Error"></span>
+        </div>
+
+        <button type="submit" onclick="return validationform()">Submit</button
+        ><br /><br />
+        <span id="submit-Error"></span>
+        <button type="reset" id="reset">Reset</button><br /><br />
+      </form>
+    </div>
+    <script src="./dynamic.jsx"></script>
+  </body>
+</html>
